@@ -1,0 +1,25 @@
+.services-section {
+    padding: 60px 0;
+}
+
+.service-card {
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Smooth transition for hover effects */
+    border-radius: 8px;
+    /* Rounded corners */
+}
+
+.service-card:hover {
+    transform: scale(1.05);
+    /* Slightly scale up the card */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    /* Increase shadow on hover */
+}
+
+.service-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}

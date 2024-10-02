@@ -1,0 +1,100 @@
+.review-section {
+    padding: 20px;
+    text-align: center;
+    background-color: #f2f2f2;
+    /* Light gray background */
+    border-radius: 8px;
+    /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow */
+}
+
+.review-section h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    /* Large font size for the heading */
+    color: #ff6d01;
+    /* Updated color for the heading */
+}
+
+.review-container {
+    display: flex;
+    overflow-x: auto;
+    /* Allow horizontal scrolling */
+    scroll-behavior: smooth;
+    /* Smooth scrolling */
+    padding: 10px;
+    /* Padding inside the container */
+    scrollbar-width: none;
+    /* Hide scrollbar for Firefox */
+    -ms-overflow-style: none;
+    /* Hide scrollbar for Internet Explorer and Edge */
+}
+
+/* Hide scrollbar for WebKit browsers (Chrome, Safari) */
+.review-container::-webkit-scrollbar {
+    display: none;
+}
+
+.review-card {
+    min-width: 300px;
+    /* Minimum width for each review card */
+    margin-right: 20px;
+    /* Space between cards */
+    padding: 15px;
+    /* Padding inside the card */
+    background-color: white;
+    /* White background for cards */
+    border-radius: 8px;
+    /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for cards */
+    transition: transform 0.3s, box-shadow 0.3s;
+    /* Transition effects */
+}
+
+.review-card:hover {
+    transform: translateY(-5px);
+    /* Lift effect on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    /* Darker shadow on hover */
+}
+
+.review-card h4 {
+    margin-bottom: 10px;
+    font-size: 1.25rem;
+    /* Slightly larger font for names */
+    color: #ff6d01;
+    /* Updated color for names */
+}
+
+.review-card p {
+    font-size: 1rem;
+    /* Standard font size for reviews */
+    color: #555;
+    /* Dark gray text for reviews */
+    margin-bottom: 10px;
+    /* Space below the review text */
+}
+
+.rating {
+    font-weight: bold;
+    /* Bold rating text */
+    color: #FFAA00;
+    /* Gold color for stars */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .review-card {
+        min-width: 250px;
+        /* Adjust width for smaller screens */
+        margin-right: 10px;
+        /* Reduce space between cards */
+    }
+
+    .review-section h2 {
+        font-size: 1.5rem;
+        /* Smaller heading for mobile */
+    }
+}

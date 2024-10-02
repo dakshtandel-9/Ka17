@@ -1,0 +1,32 @@
+/* Navbar CSS */
+
+/* Navbar container */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Semi-transparent background */
+    padding: 10px 0;
+}
+
+/* Navbar Links */
+.navbar-links .nav-link {
+    color: #fff;
+    margin-right: 15px;
+    font-weight: 500;
+}
+
+.navbar-links .nav-link:hover {
+    color: #ff6d00;
+    /* Hover color using brand color */
+}
+
+/* Menu icon for mobile */
+.menu-icon {
+    color: #fff;
+}
+
+@media (max-width: 600px) {
+    .navbar-links {
+        display: none;
+        /* Hide links on mobile */
+    }
+}
